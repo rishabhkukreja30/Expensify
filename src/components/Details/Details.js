@@ -11,7 +11,7 @@ const classes = useStyles()
         <Card className={title === 'Income' ? classes.income : classes.expense}>
             <CardHeader title={title}/>
             <CardContent>
-                <Typography variant="h5">₹500</Typography>
+                <Typography variant="h5">₹ 500</Typography>
                 {/* <Doughnut data ="Data" /> */}
             </CardContent>
         </Card>
