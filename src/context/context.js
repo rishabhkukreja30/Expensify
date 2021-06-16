@@ -12,7 +12,7 @@ export const Provider = ({children}) => {
     //  Action Creators
 
     const deleteTransaction = (id) => {
-        dispatch({type : 'DELETE TRANSACTION', payload : id})
+        dispatch({type : 'DELETE TRANSACTION', payload: id})
     }
 
     const addTransaction = (transaction) => {

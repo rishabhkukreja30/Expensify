@@ -13,7 +13,7 @@ const { deleteTransaction, transactions} = useContext(ExpenseTrackerContext)
     return (
         <MUIList dense={false} className={classes.list}>
             {transactions.map((transaction) => (
-                <Slide direction="down" in mountOnEnter unmountOnExit key={transactions.id}>
+                <Slide direction="down" in mountOnEnter unmountOnExit key={transaction.id}>
                     <ListItem>
                         <ListItemAvatar>
                             <Avatar className={transaction.type === 'Income' ? classes.avatarIncome : classes.avatarExpense}>
