@@ -31,10 +31,10 @@ const classes = useStyles()
                     </Select>
                 </FormControl>
             </Grid>
-            <Grid item sx={6}>
+            <Grid item xs={6}>
                 <TextField type="number" label ="Amount" fullWidth/>
             </Grid>
-            <Grid item sx={6}>
+            <Grid item xs={6}>
                 <TextField type="date" label ="Date" fullWidth/>
             </Grid>
             <Button className={classes.button} variant="outlined" color="primary" fullWidth>Create</Button>
