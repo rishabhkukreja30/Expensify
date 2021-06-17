@@ -11,12 +11,14 @@ export const Provider = ({children}) => {
 
     //  Action Creators
 
-    const deleteTransaction = (id) => 
-        dispatch({type : 'DELETE TRANSACTION', payload: id})
-    
+    const deleteTransaction = (id) => {
+        dispatch({type : 'DELETE_TRANSACTION', payload: id})
+    }
 
     const addTransaction = (transaction) => 
         dispatch({type: 'ADD_TRANSACTION', payload: transaction})
+
+        console.log(transactions)
     
     const balance = transactions.reduce((acc, currVal) => {
             return (currVal.type === 'Expense' ? acc - currVal.amount : acc + currVal.amount)
